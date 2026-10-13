@@ -21,3 +21,20 @@
 .hero-mini[class*="hero-banner-"] .page-banner-photo{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-1;pointer-events:none}
 .hero-mini[class*="hero-banner-"] .container{position:relative;z-index:2}
 @media(max-width:680px){.hero-mini[class*="hero-banner-"] .page-banner-photo{object-position:62% center}}
+
+/* 2026-10-13 visual stability and legibility correction; content unchanged */
+.hero-mini.dark h1,.hero-mini.dark h2{color:#fff8f0}
+.hero-mini.dark .script{color:var(--gold)}
+.hero-mini.dark{background-image:linear-gradient(90deg,rgba(10,7,8,.97) 0%,rgba(10,7,8,.90) 44%,rgba(10,7,8,.56) 100%),url('../assets/4.jpeg')}
+.hero-mini[class*="hero-banner-"] .page-banner-photo{object-fit:cover}
+.hero-mini[class*="hero-banner-"]::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,rgba(255,245,241,.97) 0%,rgba(255,245,241,.92) 37%,rgba(255,245,241,.38) 70%,transparent 100%)}
+.hero-mini[class*="hero-banner-"]>.container{z-index:2}
+.cards>.card,.grid-price>.price-card{min-width:0;display:flex;flex-direction:column;height:100%}
+.cards>.card .body{position:relative;z-index:1;flex:1;background:inherit}
+.cards>.card .photo{flex:none;display:block;height:230px;object-fit:cover}
+.grid-price>.price-card .btn{margin-top:auto;align-self:flex-start}
+.grid-price>.price-card{gap:8px}
+.grid-price>.price-card h3,.grid-price>.price-card p{margin-top:0}
+.split>*{min-width:0}
+.feature-image{display:block}
+@media(max-width:680px){.hero-mini[class*="hero-banner-"]::after{background:linear-gradient(90deg,rgba(255,245,241,.97),rgba(255,245,241,.88) 68%,rgba(255,245,241,.50))}.hero-mini.dark{background-image:linear-gradient(90deg,rgba(10,7,8,.97),rgba(10,7,8,.78)),url('../assets/4.jpeg')}.cards>.card .photo{height:250px}}
