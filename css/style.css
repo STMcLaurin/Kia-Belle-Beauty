@@ -38,3 +38,8 @@
 .split>*{min-width:0}
 .feature-image{display:block}
 @media(max-width:680px){.hero-mini[class*="hero-banner-"]::after{background:linear-gradient(90deg,rgba(255,245,241,.97),rgba(255,245,241,.88) 68%,rgba(255,245,241,.50))}.hero-mini.dark{background-image:linear-gradient(90deg,rgba(10,7,8,.97),rgba(10,7,8,.78)),url('../assets/4.jpeg')}.cards>.card .photo{height:250px}}
+
+/* Kia Belle Beauty: refined portfolio referral buttons */
+.btn-portfolio{background:#b76e79;border:1px solid #d9abb1;color:#fff8f0;border-radius:8px;max-width:100%;white-space:normal;text-align:center;line-height:1.5;padding:13px 18px;box-shadow:0 4px 14px rgba(183,110,121,.18);transition:background .2s,border-color .2s,transform .2s}
+.btn-portfolio:hover,.btn-portfolio:focus-visible{background:#995361;border-color:#f3e1c8;color:#fff;transform:translateY(-1px)}
+@media(max-width:680px){.btn-portfolio{width:100%;font-size:12px;padding:13px 14px}}
